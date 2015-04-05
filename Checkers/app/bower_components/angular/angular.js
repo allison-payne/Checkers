@@ -5133,8 +5133,8 @@ function $CacheFactoryProvider() {
  * Adding via the $templateCache service:
  *
  * ```js
- * var myApp = angular.module('myApp', []);
- * myApp.run(function($templateCache) {
+ * var checkers = angular.module('checkers', []);
+ * checkers.run(function($templateCache) {
  *   $templateCache.put('templateId.html', 'This is the content of the template');
  * });
  * ```
@@ -13339,7 +13339,7 @@ function adjustMatchers(matchers) {
  * Here is what a secure configuration for this scenario might look like:
  *
  * ```
- *  angular.module('myApp', []).config(function($sceDelegateProvider) {
+ *  angular.module('checkers', []).config(function($sceDelegateProvider) {
  *    $sceDelegateProvider.resourceUrlWhitelist([
  *      // Allow same origin resource loads.
  *      'self',

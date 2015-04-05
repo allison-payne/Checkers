@@ -23,7 +23,7 @@ Add a `<script>` to your `index.html`:
 Then add `ngRoute` as a dependency for your app:
 
 ```javascript
-angular.module('myApp', ['ngRoute']);
+angular.module('checkers', ['ngRoute']);
 ```
 
 Note that this package is not in CommonJS format, so doing `require('angular-route')` will
@@ -44,7 +44,7 @@ Add a `<script>` to your `index.html`:
 Then add `ngRoute` as a dependency for your app:
 
 ```javascript
-angular.module('myApp', ['ngRoute']);
+angular.module('checkers', ['ngRoute']);
 ```
 
 ## Documentation
