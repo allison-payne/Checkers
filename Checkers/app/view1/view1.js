@@ -7,11 +7,6 @@ angular.module('checkers.view1', ['ngRoute'])
                     controller: 'checkerCtrl'
                });
           }])
-     .controller('checkerCtrl', ['$scope', 'piecesProvider', function ($scope, piecesProvider) {
-               $scope.onDragComplete = function (data, evt) {
-                    console.log("drag success, data:", data);
-               };
-               $scope.onDropComplete = function (data, evt) {
-                    console.log("drop success, data:", data);
-               };
+     .controller('checkerCtrl', ['$scope', function ($scope) {
+
           }]);

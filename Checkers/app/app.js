@@ -7,7 +7,8 @@ angular.module('checkers', [
      'checkers.view1',
      'checkers.view2',
      'checkers.version',
-     'checkers.providers'
+     'checkers.square',
+     'checkers.pieces'
 ]).
      config(['$routeProvider', function ($routeProvider) {
                $routeProvider.otherwise({redirectTo: '/view1'});
