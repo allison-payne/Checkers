@@ -5,7 +5,7 @@
  */
 'use strict';
 
-angular.module('checkers.square.directives', [])
+angular.module('checkers.board.directives', [])
 
      .directive('checkerSquare', function () {
           return {
@@ -13,6 +13,6 @@ angular.module('checkers.square.directives', [])
                transclude: true,
                scope: {},
                controller: 'squareCtrl',
-               templateUrl: 'template.html'
+               templateUrl: 'square.html'
           };
      });

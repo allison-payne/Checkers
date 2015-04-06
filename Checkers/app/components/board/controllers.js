@@ -4,7 +4,7 @@
  * @author Allison
  */
 'use strict';
-angular.module('checkers.square.controllers', [])
+angular.module('checkers.board.controllers', [])
      .controller('squareCtrl', ['$scope', 'piecesProvider', function ($scope, piecesProvider) {
                $scope.onDragComplete = function (data, evt) {
                     console.log("drag success, data:", data);

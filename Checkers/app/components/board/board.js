@@ -5,8 +5,9 @@
  */
 'use strict';
 
-angular.module('checkers.square', [
+angular.module('checkers.board', [
      'checkers.pieces.providers',
-     'checkers.square.controllers',
-     'checkers.square.directives'
+     'checkers.board.providers',
+     'checkers.board.controllers',
+     'checkers.board.directives'
 ]);

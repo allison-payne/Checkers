@@ -7,7 +7,7 @@ angular.module('checkers', [
      'checkers.view1',
      'checkers.view2',
      'checkers.version',
-     'checkers.square',
+     'checkers.board',
      'checkers.pieces'
 ]).
      config(['$routeProvider', function ($routeProvider) {
