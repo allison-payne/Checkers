@@ -1,56 +1,25 @@
 <p>This is the partial for view 1.</p>
+<!--<div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>-->
 <div id="chessboard" class="gameboard">
      <div>
-          <div class="white_square" id="KR8" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="KN8" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="KB8" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="K8" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="Q8" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="QB8" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="QN8" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="QR8" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
+          <checkersquare class="white_square" id="KR8"></checkersquare>
+          <checkersquare class="black_square" id="KN8"></checkersquare>
+          <checkersquare class="white_square" id="KB8"></checkersquare>
+          <checkersquare class="black_square" id="K8"></checkersquare>
+          <checkersquare class="white_square" id="Q8"></checkersquare>
+          <checkersquare class="black_square" id="QB8"></checkersquare>
+          <checkersquare class="white_square" id="QN8"></checkersquare>
+          <checkersquare class="black_square" id="QR8"></checkersquare>
      </div>
      <div>
-          <div class="black_square" id="KR7" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="KN7" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="KB7" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="K7" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="Q7" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="QB7" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="QN7" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="QR7"  >
-               <div class="red_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
+          <checkersquare class="black_square" id="KR7"></checkersquare>
+          <checkersquare class="white_square" id="KN7"></checkersquare>
+          <checkersquare class="black_square" id="KB7"></checkersquare>
+          <checkersquare class="white_square" id="K7"></checkersquare>
+          <checkersquare class="black_square" id="Q7"></checkersquare>
+          <checkersquare class="white_square" id="QB7"></checkersquare>
+          <checkersquare class="black_square" id="QN7"></checkersquare>
+          <checkersquare class="white_square" id="QR7"></checkersquare>
      </div>
      <div>
           <!--          <div class="white_square" id="KR6" ng-drop="true" ng-drop-success="onDropComplete($data,$event)"></div>-->
@@ -94,55 +63,23 @@
           <checkersquare class="white_square" id="QR3"></checkersquare>
      </div>
      <div>
-          <div class="white_square" id="KR2"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="KN2"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="KB2"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="K2"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="Q2"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="QB2"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="QN2"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="QR2" ng-drop="true" ng-drop-success="onDropComplete($data,$event)"  >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
+          <checkersquare class="white_square" id="KR2"></checkersquare>
+          <checkersquare class="black_square" id="KN2"></checkersquare>
+          <checkersquare class="white_square" id="KB2"></checkersquare>
+          <checkersquare class="black_square" id="K2"></checkersquare>
+          <checkersquare class="white_square" id="Q2"></checkersquare>
+          <checkersquare class="black_square" id="QB2"></checkersquare>
+          <checkersquare class="white_square" id="QN2"></checkersquare>
+          <checkersquare class="black_square" id="QR2"></checkersquare>
      </div>
      <div>
-          <div class="black_square" id="KR1"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="KN1"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="KB1"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="K1"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="Q1"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="QB1"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="black_square" id="QN1"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
-          <div class="white_square" id="QR1"ng-drop="true" ng-drop-success="onDropComplete($data,$event)" >
-               <div class="black_piece" ng-drag="true"  ng-drag-success="onDragComplete($data,$event)"></div>
-          </div>
+          <checkersquare class="black_square" id="KR1"></checkersquare>
+          <checkersquare class="white_square" id="KN1"></checkersquare>
+          <checkersquare class="black_square" id="KB1"></checkersquare>
+          <checkersquare class="white_square" id="K1"></checkersquare>
+          <checkersquare class="black_square" id="Q1"></checkersquare>
+          <checkersquare class="white_square" id="QB1"></checkersquare>
+          <checkersquare class="black_square" id="QN1"></checkersquare>
+          <checkersquare class="white_square" id="QR1"></checkersquare>
      </div>
 </div>

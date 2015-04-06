@@ -5,7 +5,13 @@
  */
 'use strict';
 angular.module('checkers.board.controllers', [])
-     .controller('squareCtrl', ['$scope', 'piecesProvider', function ($scope, piecesProvider) {
+     .controller('boardCtrl', ['$scope', 'squaresProvider', function ($scope, squaresProvider) {
+               $scope.boardPlaces = squaresProvider.all();
+          }])
+     .controller('rowCtrl', ['$scope', function ($scope) {
+
+          }])
+     .controller('squareCtrl', ['$scope', function ($scope) {
                $scope.onDragComplete = function (data, evt) {
                     console.log("drag success, data:", data);
                };

@@ -8,15 +8,10 @@ angular.module('checkers.board.providers', [])
           return {
                $get: function () {
                     return {
-                         getAll: function () {
+                         all: function () {
                               return _squares;
                          },
-                         setLocation: function (id, location) {
-                              _squares.filter(function (square) {
-                                   return square.id = id;
-                              })[0].location = location;
-                         },
-                         getSquare: function (id) {
+                         single: function (id) {
                               return _squares.filter(function (square) {
                                    return square.id = id;
                               })[0];
