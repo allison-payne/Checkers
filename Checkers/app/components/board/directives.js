@@ -9,44 +9,48 @@ angular.module('checkers.board.directives', [])
      .directive('checkerBoard', function () {
           return {
                restrict: 'E',
+               //require: 'ngModel',
                transclude: true,
                scope: {
                },
                controller: 'boardCtrl',
-               link: function (scope, element, attrs) {
-
+               link: function (scope, element, attrs, controller) {
+                    debugger;
                },
-               templateUrl: 'board.html'
+               templateUrl: 'components/board/templates/board.html'
           };
      })
      .directive('checkerRow', function () {
           return {
-               require: '^checkerBoard',
+               require: ['^checkerBoard', 'ngModel'],
                restrict: 'E',
                transclude: true,
                scope: {
-                    row: '='
+                    boardPlaces: '=',
+                    row: '=ngModel'
                },
                controller: 'rowCtrl',
                link: function (scope, element, attrs, boardCtrl) {
-
+                    debugger;
                },
-               templateUrl: 'row.html'
+               templateUrl: 'components/board/templates/row.html'
           };
      })
      .directive('checkerSquare', function () {
           return {
-               require: '^checkerRow',
+               require: ['^checkerRow', 'ngModel'],
                restrict: 'E',
                transclude: true,
                scope: {
-                    id: '=',
-                    currentPiece: '='
+                    row: '=',
+                    square: '=ngModel',
+                    ngDrop: '=',
+                    onDropSuccess: '='
                },
                controller: 'squareCtrl',
-               link: function (scope, element, attrs, rowCtrl) {
+               link: function (scope, element, attrs, controllers) {
 
                },
-               templateUrl: 'square.html'
+               templateUrl: 'components/board/templates/square.html'
           };
      });

@@ -1,0 +1,8 @@
+<div class="gameboard" ng-model="boardPlaces">
+     <!--     <div ng-repeat="row in boardPlaces">
+               <div ng-repeat="square in row" class="square" ng-model="square" ng-drop="true" ng-drop-success="onDropComplete($data,$event)">
+                    {{square.id}}
+               </div>
+          </div>-->
+     <checker-row ng-model="row" ng-repeat="row in boardPlaces"></checker-row>
+</div>

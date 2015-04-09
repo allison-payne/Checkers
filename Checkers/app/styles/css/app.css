@@ -470,13 +470,20 @@ textarea:focus {
 .menu:after {
   content: "]"; }
 
+.content {
+  margin-right: 25%;
+  margin-left: 25%; }
+
 .gameboard {
   width: 800px;
   height: 800px;
   border: 4px solid #FF0000;
   display: block;
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  -webkit-box-shadow: 2px 5px 5px 2px black;
+  -moz-box-shadow: 2px 5px 5px 2px black;
+  box-shadow: 2px 5px 5px 2px black; }
   .gameboard .square, .gameboard .black_square, .gameboard .white_square {
     width: 100px;
     height: 100px;

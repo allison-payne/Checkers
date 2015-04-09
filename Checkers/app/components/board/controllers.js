@@ -9,7 +9,7 @@ angular.module('checkers.board.controllers', [])
                $scope.boardPlaces = squaresProvider.all();
           }])
      .controller('rowCtrl', ['$scope', function ($scope) {
-
+               $scope.row;
           }])
      .controller('squareCtrl', ['$scope', function ($scope) {
                $scope.onDragComplete = function (data, evt) {
