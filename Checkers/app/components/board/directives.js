@@ -4,7 +4,6 @@
  * @author Allison
  */
 'use strict';
-
 angular.module('checkers.board.directives', [])
      .directive('checkerBoard', function () {
           return {

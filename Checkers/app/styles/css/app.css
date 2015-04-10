@@ -470,10 +470,6 @@ textarea:focus {
 .menu:after {
   content: "]"; }
 
-.content {
-  margin-right: 25%;
-  margin-left: 25%; }
-
 .gameboard {
   width: 800px;
   height: 800px;
@@ -481,6 +477,10 @@ textarea:focus {
   display: block;
   padding: 0px;
   margin: 0px;
+  float: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   -webkit-box-shadow: 2px 5px 5px 2px black;
   -moz-box-shadow: 2px 5px 5px 2px black;
   box-shadow: 2px 5px 5px 2px black; }
@@ -492,26 +492,30 @@ textarea:focus {
     padding: 0px;
     margin: 0px; }
   .gameboard .black_square {
+    color: white;
     background-color: #000000; }
   .gameboard .white_square {
     background-color: #FFFFFF; }
-  .gameboard .gamepiece, .gameboard .red_piece, .gameboard .black_piece {
-    width: 90px;
-    height: 90px;
-    float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    -webkit-border-radius: 180px;
-    -moz-border-radius: 180px;
-    -ms-border-radius: 180px;
-    border-radius: 180px;
-    -webkit-box-shadow: 2px 5px 5px 2px grey;
-    -moz-box-shadow: 2px 5px 5px 2px grey;
-    box-shadow: 2px 5px 5px 2px grey; }
-  .gameboard .red_piece {
-    background-color: red; }
-  .gameboard .black_piece {
-    background-color: black; }
+
+.gamepiece, .red_piece, .black_piece {
+  width: 90px;
+  height: 90px;
+  float: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-border-radius: 180px;
+  -moz-border-radius: 180px;
+  -ms-border-radius: 180px;
+  border-radius: 180px;
+  -webkit-box-shadow: 2px 5px 5px 2px grey;
+  -moz-box-shadow: 2px 5px 5px 2px grey;
+  box-shadow: 2px 5px 5px 2px grey; }
+
+.red_piece {
+  background-color: red; }
+
+.black_piece {
+  background-color: black; }
 
 /*# sourceMappingURL=app.css.map */

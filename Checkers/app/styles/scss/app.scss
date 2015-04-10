@@ -35,8 +35,7 @@ and open the template in the editor.
      content: "]";
 }
 .content{
-     margin-right: 25%;
-     margin-left: 25%;
+
 }
 .gameboard {
      width:800px;
@@ -45,6 +44,7 @@ and open the template in the editor.
      display:block;
      padding:0px;
      margin:0px;
+     @include center-block();
      @include drop-shadow(2px, 5px, 5px, 2px, black);
      .square{
           width:100px;
@@ -56,25 +56,27 @@ and open the template in the editor.
      }
      .black_square{
           @extend .square;
+          color: white;
           background-color:#000000;
      }
      .white_square {
           @extend .square;
           background-color:#FFFFFF;
      }
-     .gamepiece{
-          width:90px;
-          height: 90px;
-          @include center-block();
-          @include border-radius(180px);
-          @include drop-shadow(2px, 5px, 5px, 2px, grey);
-     }
-     .red_piece{
-          @extend .gamepiece;
-          background-color: red;
-     }
-     .black_piece{
-          @extend .gamepiece;
-          background-color: black;
-     }
+}
+
+.gamepiece{
+     width:90px;
+     height: 90px;
+     @include center-block();
+     @include border-radius(180px);
+     @include drop-shadow(2px, 5px, 5px, 2px, grey);
+}
+.red_piece{
+     @extend .gamepiece;
+     background-color: red;
+}
+.black_piece{
+     @extend .gamepiece;
+     background-color: black;
 }

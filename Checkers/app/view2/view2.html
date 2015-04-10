@@ -1,12 +1,10 @@
-<p>This is the partial for view 2.</p>
 <p>
      Showing of 'interpolate' filter:
      {{ 'Current version is v%VERSION%.' | interpolate }}
 </p>
 
-<div class="red_circle"></div>
+<div class="red_piece"></div>
 
-<div class="black_circle"></div>
-<div>
-     <checker-board></checker-board>
-</div>
+<div class="black_piece"></div>
+
+<checker-piece ng-model="piece" class="{{piece.class}}"></checker-piece>

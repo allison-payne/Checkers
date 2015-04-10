@@ -1,5 +1,4 @@
 'use strict';
-
 angular.module('checkers.view1', ['ngRoute'])
      .config(['$routeProvider', function ($routeProvider) {
                $routeProvider.when('/view1', {

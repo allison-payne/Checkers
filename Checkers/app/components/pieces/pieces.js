@@ -6,5 +6,7 @@
 'use strict';
 
 angular.module('checkers.pieces', [
-     'checkers.pieces.providers'
+     'checkers.pieces.providers',
+     'checkers.pieces.controllers',
+     'checkers.pieces.directives'
 ]);
